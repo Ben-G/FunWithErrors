@@ -15,5 +15,6 @@
 + (NSString *)provideNilStringWithError:(NSError**)error;
 + (NSString *)provideNilStringNoErrorWithError:(NSError**)error;
 + ( NSString * _Nullable )provideNullableNilStringNoErrorWithError:(NSError**)error;
++ (BOOL)couldFail:(NSError**)error;
 
 @end

@@ -65,5 +65,8 @@ do {
 }
 
 do {
-  try ErrorProducer.provideNullableNilStringNoError()
+  try ErrorProducer.couldFail()
+} catch let error as NSError {
+  print("couldFail has thrown:")
+  print("domain: \(error.domain) code: \(error.code)")
 }

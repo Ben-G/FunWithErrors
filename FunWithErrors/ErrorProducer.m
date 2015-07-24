@@ -36,4 +36,8 @@
   return nil;
 }
 
++ (BOOL)couldFail:(NSError**)error {
+  return false;
+}
+
 @end
